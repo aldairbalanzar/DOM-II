@@ -32,6 +32,12 @@ firstImg.addEventListener('mouseout', () => firstImg.style.transform = 'scale(1)
 let bottomBtn = document.querySelector('.destination .btn');
 bottomBtn.addEventListener('click', () => {
     document.querySelector('.content-pick').style.backgroundColor = 'orange';
+    gsap.to(bottomBtn, {
+        duration: 0.6,
+        rotateY: 180,
+        ease: 'elastice(1, 0.75)'
+    })
     event.stopPropagation();
 });
+
 
